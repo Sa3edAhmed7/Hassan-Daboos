@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "689687e8-a948-4cf6-ae67-cbde13626441",
+		"name": "Api LaVie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21273107"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "getposts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4Njc1OTQsImV4cCI6MTY3Mjg3MTE5NCwibmJmIjoxNjcyODY3NTk0LCJqdGkiOiJpQmtkWUo2azMzVndwYmlPIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-VUchG4DXhBIckbYIwx9Hrlv_Qgn9enu5LfSIHLVXLo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4Njc1OTQsImV4cCI6MTY3Mjg3MTE5NCwibmJmIjoxNjcyODY3NTk0LCJqdGkiOiJpQmtkWUo2azMzVndwYmlPIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-VUchG4DXhBIckbYIwx9Hrlv_Qgn9enu5LfSIHLVXLo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showpost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/post/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "storepost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts?title=&content=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": ""
+								},
+								{
+									"key": "content",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatepost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/post/13",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"13"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "title3",
+									"disabled": true
+								},
+								{
+									"key": "content",
+									"value": "content3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletepost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/posts/12",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "getcomments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/comments?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4Njc1OTQsImV4cCI6MTY3Mjg3MTE5NCwibmJmIjoxNjcyODY3NTk0LCJqdGkiOiJpQmtkWUo2azMzVndwYmlPIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-VUchG4DXhBIckbYIwx9Hrlv_Qgn9enu5LfSIHLVXLo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4Njc1OTQsImV4cCI6MTY3Mjg3MTE5NCwibmJmIjoxNjcyODY3NTk0LCJqdGkiOiJpQmtkWUo2azMzVndwYmlPIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-VUchG4DXhBIckbYIwx9Hrlv_Qgn9enu5LfSIHLVXLo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showcomment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/comment/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"comment",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "storecomment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updatecomment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "deletecomment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/register?name=saeid&email=saeid@gmail.com&password=12345678",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "saeid"
+						},
+						{
+							"key": "email",
+							"value": "saeid@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/login?email=saeid@gmail.com&password=12345678",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "saeid@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/logout?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4NjQzOTgsImV4cCI6MTY3Mjg2Nzk5OCwibmJmIjoxNjcyODY0Mzk4LCJqdGkiOiI0N1p5c0pRZjA1YW1TU1FDIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fE_jCXzzHzh-4sLLiow_-Hlt9aUWJjJZ8em5Fbdi-io",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4NjQzOTgsImV4cCI6MTY3Mjg2Nzk5OCwibmJmIjoxNjcyODY0Mzk4LCJqdGkiOiI0N1p5c0pRZjA1YW1TU1FDIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fE_jCXzzHzh-4sLLiow_-Hlt9aUWJjJZ8em5Fbdi-io"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/refresh?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4NjQzOTgsImV4cCI6MTY3Mjg2Nzk5OCwibmJmIjoxNjcyODY0Mzk4LCJqdGkiOiI0N1p5c0pRZjA1YW1TU1FDIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fE_jCXzzHzh-4sLLiow_-Hlt9aUWJjJZ8em5Fbdi-io",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4NjQzOTgsImV4cCI6MTY3Mjg2Nzk5OCwibmJmIjoxNjcyODY0Mzk4LCJqdGkiOiI0N1p5c0pRZjA1YW1TU1FDIiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fE_jCXzzHzh-4sLLiow_-Hlt9aUWJjJZ8em5Fbdi-io"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
